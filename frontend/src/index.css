@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    color: #f1f5f9;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.4);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.6);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    @apply bg-white/10 border-white/20;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-brand-500 to-brand-600 text-white font-semibold px-6 py-3 rounded-xl
+           transition-all duration-300 shadow-lg shadow-brand-500/25
+           hover:shadow-xl hover:shadow-brand-500/40 hover:from-brand-400 hover:to-brand-500
+           active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 text-white font-medium px-5 py-2.5 rounded-xl border border-white/10
+           transition-all duration-300
+           hover:bg-white/20 hover:border-white/20
+           active:scale-[0.98];
+  }
+
+  .btn-danger {
+    @apply bg-red-500/20 text-red-300 font-medium px-4 py-2 rounded-xl border border-red-500/20
+           transition-all duration-300
+           hover:bg-red-500/30 hover:border-red-500/30
+           active:scale-[0.98];
+  }
+
+  .input-field {
+    @apply w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white
+           placeholder:text-surface-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50
+           focus:border-brand-500/50 transition-all duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-300 via-brand-400 to-purple-400 bg-clip-text text-transparent;
+  }
+
+  .status-pill {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .animate-dot-1 {
+    animation: bounceDot 1.4s infinite ease-in-out;
+    animation-delay: 0s;
+  }
+  .animate-dot-2 {
+    animation: bounceDot 1.4s infinite ease-in-out;
+    animation-delay: 0.2s;
+  }
+  .animate-dot-3 {
+    animation: bounceDot 1.4s infinite ease-in-out;
+    animation-delay: 0.4s;
+  }
+}

@@ -1,0 +1,321 @@
+﻿[ERROR] COMPILATION ERROR : 
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[28,13] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[30,13] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[35,30] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[41,13] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[44,9] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[24,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[25,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[26,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[26,56] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[37,62] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[37,82] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[32,25] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[42,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[44,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[45,27] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[53,52] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[59,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[61,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[62,27] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[63,39] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[64,43] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[64,78] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[50,37] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[67,21] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[68,21] cannot find symbol
+  symbol:   method setErrorMessage(java.lang.String)
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[84,25] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[85,25] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[88,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[89,33] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[91,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[91,70] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[92,25] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[93,25] cannot find symbol
+  symbol:   method setErrorMessage(java.lang.String)
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[118,56] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[155,64] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[176,56] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[216,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[216,49] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[227,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[228,26] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[228,62] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[237,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[244,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[31,32] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[32,24] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[33,30] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[34,34] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[35,30] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[36,35] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[37,37] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[37,67] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[38,32] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[39,38] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[40,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[41,32] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[42,34] cannot find symbol
+  symbol:   method getErrorMessage()
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/QueryController.java:[29,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/QueryController.java:[30,28] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[52,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[53,26] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[53,62] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[57,21] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[58,104] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[67,56] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[68,47] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[74,35] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[75,25] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[83,35] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[87,45] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[88,38] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[89,38] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[97,48] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[106,13] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[109,29] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[113,39] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[154,17] cannot find symbol
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[164,13] cannot find symbol
+[INFO] 77 errors 
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project ai-doc-platform: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[28,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.config.AppConfig
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[30,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.config.AppConfig
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[35,30] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[41,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.config.AppConfig
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/config/AppConfig.java:[44,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.config.AppConfig
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[24,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[25,28] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[26,28] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[26,56] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[37,62] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/AuthController.java:[37,82] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.docmind.dto.AuthRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[32,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[42,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.dto.AuthResponse
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[44,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[45,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[53,52] cannot find symbol
+[ERROR]   symbol:   method getPasswordHash()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[59,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.dto.AuthResponse
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[61,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/AuthService.java:[62,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[63,39] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[64,43] cannot find symbol
+[ERROR]   symbol:   method getChunkCount()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/DocumentController.java:[64,78] cannot find symbol
+[ERROR]   symbol:   method getChunkCount()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[50,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[67,21] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.docmind.model.DocumentStatus)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[68,21] cannot find symbol
+[ERROR]   symbol:   method setErrorMessage(java.lang.String)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[84,25] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.docmind.model.DocumentStatus)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[85,25] cannot find symbol
+[ERROR]   symbol:   method setChunkCount(int)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[88,17] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.service.DocumentService
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[89,33] cannot find symbol
+[ERROR]   symbol:   method getOriginalName()
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[91,17] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.service.DocumentService
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[91,70] cannot find symbol
+[ERROR]   symbol:   method getOriginalName()
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[92,25] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.docmind.model.DocumentStatus)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[93,25] cannot find symbol
+[ERROR]   symbol:   method setErrorMessage(java.lang.String)
+[ERROR]   location: variable savedDoc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[118,56] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[155,64] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[176,56] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[216,17] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[216,49] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[227,17] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[228,26] cannot find symbol
+[ERROR]   symbol:   method getUploadedBy()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[228,62] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[237,17] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/DocumentService.java:[244,17] cannot find symbol
+[ERROR]   symbol:   method setLastVerifiedDate(java.time.LocalDate)
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[31,32] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.dto.DocumentResponse
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[32,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[33,30] cannot find symbol
+[ERROR]   symbol:   method getFilename()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[34,34] cannot find symbol
+[ERROR]   symbol:   method getOriginalName()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[35,30] cannot find symbol
+[ERROR]   symbol:   method getFileType()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[36,35] cannot find symbol
+[ERROR]   symbol:   method getFileSizeBytes()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[37,37] cannot find symbol
+[ERROR]   symbol:   method getUploadedBy()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[37,67] cannot find symbol
+[ERROR]   symbol:   method getUploadedBy()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[38,32] cannot find symbol
+[ERROR]   symbol:   method getUploadedAt()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[39,38] cannot find symbol
+[ERROR]   symbol:   method getLastVerifiedDate()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[40,28] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[41,32] cannot find symbol
+[ERROR]   symbol:   method getChunkCount()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/dto/DocumentResponse.java:[42,34] cannot find symbol
+[ERROR]   symbol:   method getErrorMessage()
+[ERROR]   location: variable doc of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/QueryController.java:[29,28] cannot find symbol
+[ERROR]   symbol:   method getDocumentId()
+[ERROR]   location: variable request of type com.docmind.dto.QueryRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/controller/QueryController.java:[30,28] cannot find symbol
+[ERROR]   symbol:   method getQuestion()
+[ERROR]   location: variable request of type com.docmind.dto.QueryRequest
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[52,17] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[53,26] cannot find symbol
+[ERROR]   symbol:   method getUploadedBy()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[53,62] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.docmind.model.User
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[57,21] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[58,104] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[67,56] cannot find symbol
+[ERROR]   symbol:   method getPageNumber()
+[ERROR]   location: variable chunk of type com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[68,47] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable chunk of type com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[74,35] cannot find symbol
+[ERROR]   symbol:   method getLastVerifiedDate()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[75,25] cannot find symbol
+[ERROR]   symbol:   method getLastVerifiedDate()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[83,35] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable chunk of type com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[87,45] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.dto.QueryResponse.Source
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[88,38] cannot find symbol
+[ERROR]   symbol:   method getChunkIndex()
+[ERROR]   location: variable chunk of type com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[89,38] cannot find symbol
+[ERROR]   symbol:   method getPageNumber()
+[ERROR]   location: variable chunk of type com.docmind.model.DocumentChunk
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[97,48] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.model.QueryHistory
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[106,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.service.QueryService
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[109,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.docmind.dto.QueryResponse
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[113,39] cannot find symbol
+[ERROR]   symbol:   method getOriginalName()
+[ERROR]   location: variable document of type com.docmind.model.Document
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[154,17] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.service.QueryService
+[ERROR] /C:/Users/spand/Desktop/Projects/ai-doc-platform/backend/src/main/java/com/docmind/service/QueryService.java:[164,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.docmind.service.QueryService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
