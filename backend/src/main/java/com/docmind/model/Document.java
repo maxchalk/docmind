@@ -30,6 +30,10 @@ public class Document {
     private String errorMessage;
     private LocalDateTime uploadedAt;
 
+    /** SHA-256 hex digest of the raw file bytes — used for content-based deduplication. */
+    @Column(length = 64, unique = true)
+    private String contentHash;
+
     @PrePersist
     protected void onCreate() {
         this.uploadedAt = LocalDateTime.now();
@@ -39,7 +43,8 @@ public class Document {
 
     public Document(Long id, String filename, String originalName, String fileType,
                     Long fileSizeBytes, User uploadedBy, DocumentStatus status,
-                    int chunkCount, LocalDate lastVerifiedDate, String errorMessage, LocalDateTime uploadedAt) {
+                    int chunkCount, LocalDate lastVerifiedDate, String errorMessage,
+                    LocalDateTime uploadedAt, String contentHash) {
         this.id = id;
         this.filename = filename;
         this.originalName = originalName;
@@ -51,6 +56,7 @@ public class Document {
         this.lastVerifiedDate = lastVerifiedDate;
         this.errorMessage = errorMessage;
         this.uploadedAt = uploadedAt;
+        this.contentHash = contentHash;
     }
 
     // Getters and Setters
@@ -76,6 +82,8 @@ public class Document {
     public void setErrorMessage(String errorMessage) { this.errorMessage = errorMessage; }
     public LocalDateTime getUploadedAt() { return uploadedAt; }
     public void setUploadedAt(LocalDateTime uploadedAt) { this.uploadedAt = uploadedAt; }
+    public String getContentHash() { return contentHash; }
+    public void setContentHash(String contentHash) { this.contentHash = contentHash; }
 
     // Builder
     public static Builder builder() { return new Builder(); }
@@ -91,6 +99,7 @@ public class Document {
         private LocalDate lastVerifiedDate;
         private String errorMessage;
         private LocalDateTime uploadedAt;
+        private String contentHash;
 
         public Builder id(Long id) { this.id = id; return this; }
         public Builder filename(String filename) { this.filename = filename; return this; }
@@ -103,9 +112,10 @@ public class Document {
         public Builder lastVerifiedDate(LocalDate lastVerifiedDate) { this.lastVerifiedDate = lastVerifiedDate; return this; }
         public Builder errorMessage(String errorMessage) { this.errorMessage = errorMessage; return this; }
         public Builder uploadedAt(LocalDateTime uploadedAt) { this.uploadedAt = uploadedAt; return this; }
+        public Builder contentHash(String contentHash) { this.contentHash = contentHash; return this; }
         public Document build() {
             return new Document(id, filename, originalName, fileType, fileSizeBytes,
-                    uploadedBy, status, chunkCount, lastVerifiedDate, errorMessage, uploadedAt);
+                    uploadedBy, status, chunkCount, lastVerifiedDate, errorMessage, uploadedAt, contentHash);
         }
     }
 }

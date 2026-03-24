@@ -268,13 +268,15 @@ const DashboardPage: React.FC = () => {
                       Ask Questions
                     </button>
                   )}
-                  <button
-                    onClick={() => handleDelete(doc.id)}
-                    disabled={deletingId === doc.id}
-                    className="btn-danger flex items-center justify-center gap-1 text-sm py-2 px-3"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
+                  {(user?.role === 'ADMIN' || user?.role === 'HR' || doc.uploadedByEmail === user?.email) && (
+                    <button
+                      onClick={() => handleDelete(doc.id)}
+                      disabled={deletingId === doc.id}
+                      className="btn-danger flex items-center justify-center gap-1 text-sm py-2 px-3"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </button>
+                  )}
                 </div>
               </div>
             ))}

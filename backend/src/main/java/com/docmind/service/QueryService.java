@@ -18,7 +18,6 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.file.AccessDeniedException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -55,28 +54,36 @@ public class QueryService {
         this.httpClient = HttpClient.newHttpClient();
     }
 
-    public QueryResponse askQuestion(Long documentId, String question, User user) throws AccessDeniedException {
+    public QueryResponse askQuestion(Long documentId, String question, User user) {
         Document document = documentRepository.findById(documentId)
                 .orElseThrow(() -> new RuntimeException("Document not found"));
-
-        // Check access
-        if (user.getRole() == Role.EMPLOYEE &&
-                !document.getUploadedBy().getId().equals(user.getId())) {
-            throw new AccessDeniedException("You don't have access to this document");
-        }
 
         if (document.getStatus() != DocumentStatus.READY) {
             throw new RuntimeException("Document is not ready for queries. Current status: " + document.getStatus());
         }
 
-        // Get top 5 chunks
-        List<DocumentChunk> chunks = documentChunkRepository.findTop5ByDocumentOrderByChunkIndex(document);
+        // Retrieve the most relevant chunks via PostgreSQL full-text search.
+        // Fall back to sequential top-10 if the question yields no ts_rank results
+        // (e.g. very short query or all stop-words).
+        List<DocumentChunk> chunks;
+        try {
+            chunks = documentChunkRepository.findRelevantChunks(document.getId(), question, 8);
+        } catch (Exception e) {
+            log.warn("Full-text search failed ({}), using sequential fallback", e.getMessage());
+            chunks = documentChunkRepository.findTop10ByDocumentOrderByChunkIndex(document);
+        }
+        if (chunks.isEmpty()) {
+            log.debug("No FTS results for question, falling back to sequential chunks");
+            chunks = documentChunkRepository.findTop10ByDocumentOrderByChunkIndex(document);
+        }
 
-        // Build context
+        // Build context — clear page markers help the AI cite accurately
         StringBuilder contextBuilder = new StringBuilder();
         for (DocumentChunk chunk : chunks) {
-            contextBuilder.append("Page ").append(chunk.getPageNumber())
-                    .append(": ").append(chunk.getContent())
+            contextBuilder
+                    .append("--- Page ").append(chunk.getPageNumber())
+                    .append(", Section ").append(chunk.getChunkIndex() + 1).append(" ---\n")
+                    .append(chunk.getContent())
                     .append("\n\n");
         }
         String context = contextBuilder.toString();
@@ -126,18 +133,33 @@ public class QueryService {
     }
 
     private String callGroqApi(String context, String question) {
+        if (groqApiKey == null || groqApiKey.isBlank()) {
+            throw new RuntimeException(
+                "Groq API key is not configured. Set GROQ_API_KEY in your .env file and restart the server.");
+        }
         try {
-            String systemMessage = "You are a document assistant. Answer ONLY from the provided document context. " +
-                    "Always mention the page number when you cite information. " +
-                    "If the answer is not in the context, say 'I could not find this information in the document.' " +
-                    "Be concise and professional.";
+            String systemMessage = """
+                    You are a precise document assistant. Answer questions using ONLY the information in the provided document context.
+
+                    STRICT RULES:
+                    1. Always cite the page number(s) when you use information, e.g. "According to Page 2..." or "(Source: Page 3)".
+                    2. Format your response using Markdown:
+                       - Use **bold** for key terms, policy names, roles, and important values.
+                       - Use bullet points (- item) or numbered lists (1. item) for multi-part answers.
+                       - Use clear paragraph breaks between sections.
+                    3. Be thorough: include ALL relevant details from the context that answer the question — do not omit important conditions or exceptions.
+                    4. If the answer spans multiple pages, cite every relevant page.
+                    5. If the answer is NOT present in the provided context, respond with exactly: "I could not find this information in the provided document."
+                    6. Never add knowledge from outside the provided context.
+                    """;
+
 
             String userMessage = "Context:\n" + context + "\n\nQuestion: " + question;
 
             // Build JSON using Jackson ObjectMapper for proper escaping
             ObjectNode root = objectMapper.createObjectNode();
             root.put("model", groqModel);
-            root.put("max_tokens", 1000);
+            root.put("max_tokens", 2000);
             root.put("temperature", 0.1);
 
             ArrayNode messages = root.putArray("messages");

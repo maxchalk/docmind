@@ -205,9 +205,7 @@ const QueryPage: React.FC = () => {
                       </div>
                     ) : (
                       <>
-                        <div className="text-sm text-surface-200 whitespace-pre-wrap leading-relaxed">
-                          {msg.content}
-                        </div>
+                        <MarkdownContent content={msg.content} />
                         {msg.sources && msg.sources.length > 0 && (
                           <SourcesSection sources={msg.sources} />
                         )}
@@ -250,6 +248,78 @@ const QueryPage: React.FC = () => {
       </div>
     </div>
   );
+};
+
+// ---------------------------------------------------------------------------
+// Lightweight markdown renderer — no external dependency required.
+// Handles: **bold**, *italic*, _italic_, # headings, - / 1. lists, paragraphs
+// ---------------------------------------------------------------------------
+const MarkdownContent: React.FC<{ content: string }> = ({ content }) => {
+  let keyCounter = 0;
+  const k = () => keyCounter++;
+
+  const renderInline = (text: string): React.ReactNode => {
+    const parts = text.split(/(\*\*[^*\n]+\*\*|\*[^*\n]+\*|_[^_\n]+_)/g);
+    return parts.map((seg, i) => {
+      if (seg.startsWith('**') && seg.endsWith('**') && seg.length > 4)
+        return <strong key={i} className="font-semibold text-white">{seg.slice(2, -2)}</strong>;
+      if (seg.length > 2 &&
+          ((seg.startsWith('*') && seg.endsWith('*')) ||
+           (seg.startsWith('_') && seg.endsWith('_'))))
+        return <em key={i} className="text-surface-300 not-italic opacity-80">{seg.slice(1, -1)}</em>;
+      return <span key={i}>{seg}</span>;
+    });
+  };
+
+  const lines = content.split('\n');
+  const elements: React.ReactNode[] = [];
+  let listType: 'ul' | 'ol' | null = null;
+  let listItems: string[] = [];
+
+  const flushList = () => {
+    if (!listItems.length) return;
+    if (listType === 'ol') {
+      elements.push(
+        <ol key={k()} className="list-decimal pl-5 my-2 space-y-1">
+          {listItems.map((item, i) => (
+            <li key={i} className="text-sm leading-relaxed text-surface-200">{renderInline(item)}</li>
+          ))}
+        </ol>
+      );
+    } else {
+      elements.push(
+        <ul key={k()} className="list-disc pl-5 my-2 space-y-1">
+          {listItems.map((item, i) => (
+            <li key={i} className="text-sm leading-relaxed text-surface-200">{renderInline(item)}</li>
+          ))}
+        </ul>
+      );
+    }
+    listItems = [];
+    listType = null;
+  };
+
+  lines.forEach(line => {
+    const t = line.trimEnd();
+
+    if (t.startsWith('### ')) { flushList(); elements.push(<h3 key={k()} className="text-sm font-bold text-white mt-3 mb-1">{t.slice(4)}</h3>); return; }
+    if (t.startsWith('## '))  { flushList(); elements.push(<h2 key={k()} className="text-base font-bold text-white mt-3 mb-1">{t.slice(3)}</h2>); return; }
+    if (t.startsWith('# '))   { flushList(); elements.push(<h1 key={k()} className="text-lg font-bold text-white mt-3 mb-1">{t.slice(2)}</h1>); return; }
+
+    const ulMatch = t.match(/^[-*•]\s+(.+)/);
+    if (ulMatch) { if (listType === 'ol') flushList(); listType = 'ul'; listItems.push(ulMatch[1]); return; }
+
+    const olMatch = t.match(/^\d+[.)]\s+(.+)/);
+    if (olMatch) { if (listType === 'ul') flushList(); listType = 'ol'; listItems.push(olMatch[1]); return; }
+
+    flushList();
+    if (t === '') { if (elements.length) elements.push(<div key={k()} className="h-2" />); return; }
+
+    elements.push(<p key={k()} className="text-sm leading-relaxed text-surface-200">{renderInline(t)}</p>);
+  });
+
+  flushList();
+  return <div className="space-y-0.5">{elements}</div>;
 };
 
 // Collapsible sources component
