@@ -13,7 +13,6 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.nio.file.AccessDeniedException;
 import java.util.List;
 import java.util.Optional;
 
@@ -72,11 +71,21 @@ class QueryServiceTest {
     }
 
     @Test
-    void askQuestion_employeeNoAccess_throwsException() {
+    void askQuestion_anyEmployeeCanQueryAnyDocument() {
+        // RBAC rule: all roles can query any document — no access restriction on queries.
+        // The call should proceed past access checks and fail only on missing Groq API key
+        // (expected in test environment where no key is configured).
         when(documentRepository.findById(1L)).thenReturn(Optional.of(testDocument));
+        when(documentChunkRepository.findRelevantChunks(anyLong(), anyString(), anyInt()))
+                .thenReturn(List.of());
+        when(documentChunkRepository.findTop10ByDocumentOrderByChunkIndex(any()))
+                .thenReturn(List.of());
 
-        assertThrows(AccessDeniedException.class,
+        RuntimeException ex = assertThrows(RuntimeException.class,
                 () -> queryService.askQuestion(1L, "What is the PTO policy?", otherEmployee));
+
+        assertTrue(ex.getMessage().contains("Groq API key"),
+                "Should fail on missing API key, not on access denial");
     }
 
     @Test
