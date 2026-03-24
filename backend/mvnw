@@ -21,11 +21,8 @@ if [ ! -d "$MAVEN_HOME" ]; then
     elif command -v wget > /dev/null; then
         wget -q "$MAVEN_DOWNLOAD_URL" -O "$MAVEN_HOME/maven.zip"
     fi
-    cd "$MAVEN_HOME"
-    unzip -q maven.zip
-    rm maven.zip
-    mv apache-maven-*/* .
-    rmdir apache-maven-*
+    # Subshell keeps the cd isolated — preserves working directory for exec below
+    (cd "$MAVEN_HOME" && unzip -q maven.zip && rm maven.zip && mv apache-maven-*/* . && rmdir apache-maven-*)
 fi
 
 exec "$MAVEN_HOME/bin/mvn" "$@"

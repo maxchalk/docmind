@@ -18,7 +18,9 @@ jobs:
           distribution: 'temurin'
       - name: Run backend tests
         working-directory: ./backend
-        run: ./mvnw test
+        run: |
+          chmod +x mvnw
+          ./mvnw test -B --no-transfer-progress
 
   frontend-build:
     runs-on: ubuntu-latest
